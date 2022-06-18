@@ -1,0 +1,17 @@
+.App h1 {
+  text-align: center;
+}
+.navbar {
+  padding: 1rem;
+  border-bottom: 1px solid aqua;
+}
+.navbar a {
+  padding: 5px 10px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
+.navbar a.active {
+  font-weight: 600;
+}
