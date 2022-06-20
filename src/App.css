@@ -1,9 +1,39 @@
-.App h1 {
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* basic */
+h1 {
   text-align: center;
 }
+ul {
+  list-style-type: none;
+}
+
+
+/* navbar */
 .navbar {
   padding: 1rem;
   border-bottom: 1px solid aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 .navbar a {
   padding: 5px 10px;
@@ -13,5 +43,51 @@
   text-decoration: underline;
 }
 .navbar a.active {
-  font-weight: 600;
+  font-weight: bold;
+}
+.site-navbar {
+  background-color: papayawhip;
+}
+.admin-navbar {
+  background-color: aqua;
+}
+.site-navbar li:first-child a, .admin-navbar li:first-child a {
+  text-decoration: none;
+  padding: 0;
+}
+
+
+/* logo */
+.logo {
+  background-color: orange;
+  border-radius: 50% 100% 50% 100%;
+  display: inline-block;
+  transform: rotate(-12deg);
+}
+.logo a {
+  font-family: cursive;
+  font-size: 1.5em;
+  font-style: italic;
+  font-weight: bold;
+  text-decoration: none;
+  color: slateblue;
+  text-shadow: 1px 1px .06em black;
+}
+.x2 {
+  font-size: 2em;
+}
+.x3 {
+  font-size: 3em;
+}
+.home-logo {
+  text-align: center;
+}
+
+
+/* temporary */
+main {
+  min-height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
